@@ -3,5 +3,5 @@ const length = 5
 
 const width = 8
 
-let squareArea = length * width
+const squareArea = length * width
 console.log("Area of square:", squareArea)

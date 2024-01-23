@@ -1,7 +1,10 @@
 // task 4.3
-const radius = 3.4
+const pi = Math.PI
+console.log(pi)
 
-const height = 9.7
+const radius = 3
 
-let cylinderVolume = radius * height
+const height = 9
+
+const cylinderVolume = pi * (radius**2) * height
 console.log("Volume of cylinder:", Number(cylinderVolume.toFixed(2)))
