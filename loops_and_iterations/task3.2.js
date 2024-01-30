@@ -1,5 +1,7 @@
 let i = 1
+let number = 3
+
 while (i <= 10) {
-    console.log(`5 x ${i} = ${i*5}`)
+    console.log(`${number} x ${i} = ${number*i}`)
     i++
 }
