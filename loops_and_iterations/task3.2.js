@@ -1,4 +1,4 @@
-const i = 1
+let i = 1
 const number = 3
 
 while (i <= 10) {
