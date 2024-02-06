@@ -10,7 +10,7 @@ function divide(numerator, denominator) {
 }
 
 try {
-    let result = divide(10, 0)
+    const result = divide(10, 0)
     console.log(result)
 } catch (error) {
     console.error("Error occurs:", error.message)
@@ -21,7 +21,7 @@ try {
 console.log("--------------------------------------------------")
 
 try {
-    let result = divide(10, "5")
+    const result = divide(10, "5")
     console.log(result)
 } catch (error) {
     console.error("Error occurs:", error.message)
@@ -32,7 +32,7 @@ try {
 console.log("--------------------------------------------------")
 
 try {
-    let result = divide(10, 5)
+    const result = divide(10, 5)
     console.log(result)
 } catch (error) {
     console.error("Error occurs:", error.message)
@@ -42,7 +42,7 @@ try {
 console.log("--------------------------------------------------")
 
 try {
-    let result = divide(5, 10)
+    const result = divide(5, 10)
     console.log(result)
 } catch (error) {
     console.error("Error occurs:", error.message)
