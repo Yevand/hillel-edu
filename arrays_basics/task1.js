@@ -9,14 +9,15 @@ let zeroCount = 0
 for (let i = 0; i < numbers.length; i++) {
     if(numbers[i] > 0) {
         positiveCount++
+        continue
     }
     if(numbers[i] < 0) {
         negativeCount++
+        continue
     }
     if(numbers[i] === 0) {
         zeroCount++
     }
-    numbers[i] += 1
 }
 
 console.log("Positive numbers:", positiveCount)
