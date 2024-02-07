@@ -5,9 +5,7 @@ function divide(numerator, denominator) {
     if (typeof numerator != "number" || typeof denominator != "number") {
         throw new Error("One or both arguments are not a number")
     }
-    else {
-        return numerator / denominator
-    }
+    return numerator / denominator
 }
 
 try {
