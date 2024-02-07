@@ -1,7 +1,8 @@
 function divide(numerator, denominator) {
     if(denominator === 0) {
         throw new Error("The denominator cannot be zero")
-    } else if (!Number.isFinite(numerator) || !Number.isFinite(denominator)) {
+    }
+    if (typeof numerator != "number" || typeof denominator != "number") {
         throw new Error("One or both arguments are not a number")
     }
     else {
