@@ -1,5 +1,6 @@
 const users = [
-    {    name: "Іван",
+    {
+        name: "Іван",
         age: 27,
         isVIP: true
     },
