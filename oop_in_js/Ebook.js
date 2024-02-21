@@ -1,8 +1,8 @@
 import Book from "./Book.js";
 
 export default class Ebook extends Book {
-    constructor(title, author, year, format) {
-        super(title, author, year)
+    constructor(bookTitle, author, bookYear, format) {
+        super(bookTitle, author, bookYear)
         this._format = format
     }
 
@@ -11,7 +11,7 @@ export default class Ebook extends Book {
     }
 
     set format(value){
-        if(value !== "pdf" && value !== "ePub" && value !== "fb2" && value !== "doc"){
+        if(!["pdf","ePub","fb2","doc"].includes(value)){
             console.log("The format is incorrect or not supported")
             return
         }
@@ -19,11 +19,11 @@ export default class Ebook extends Book {
         return value
     }
 
-    printInfo(){
-        console.log(`"${this._title}" book was written by ${this._author}. The year of publishing is ${this._year}, format: ${this._format}.`)
+    describe(){
+        console.log(`"${this._bookTitle}" book was written by ${this._author}. The year of publishing is ${this._bookYear}, format: ${this._format}.`)
     }
 
     static digitize(chosenBook, format){
-        return new Ebook(chosenBook._title, chosenBook._author, chosenBook._year, format)
+        return new Ebook(chosenBook.bookTitle, chosenBook.author, chosenBook.bookYear, format)
     }
 }

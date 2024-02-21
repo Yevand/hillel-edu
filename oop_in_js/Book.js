@@ -1,15 +1,15 @@
 export default class Book {
-    constructor(title, author, year) {
-        this._title = title
+    constructor(bookTitle, author, bookYear) {
+        this._bookTitle = bookTitle
         this._author = author
-        this._year = year
+        this._bookYear = bookYear
     }
 
-    get title() {
-        return this._title
+    get bookTitle() {
+        return this._bookTitle
     }
 
-    set title(value) {
+    set bookTitle(value) {
         if(typeof value !== "string"){
             console.log("Title should be 'string' type")
             return
@@ -50,11 +50,11 @@ export default class Book {
         return value
     }
 
-    get year(){
-        return this._year
+    get bookYear(){
+        return this._bookYear
     }
 
-    set year(value){
+    set bookYear(value){
         if(typeof value !== "number"){
             console.log("Year of publishing should be 'number' type")
             return
@@ -69,7 +69,11 @@ export default class Book {
             console.log("Publications before 2000 are not accepted")
             return
         }
-        if(value > 2024){
+        // if(value > 2024){
+        //     console.log("The publication year can only be up to this year")
+        //     return
+        // }
+        if(value > new Date().getFullYear()){
             console.log("The publication year can only be up to this year")
             return
         }
@@ -83,6 +87,13 @@ export default class Book {
     }
 
     describe() {
-        console.log(`"${this._title}" book was written by ${this._author}. The year of publishing is ${this._year}.`)
+        console.log(`"${this._bookTitle}" book was written by ${this._author}. The year of publishing is ${this._bookYear}.`)
+    }
+
+    static elderBook(books) {
+
+        books.sort((a, b) => a.bookYear - b.bookYear)
+
+        return books[0]
     }
 }
