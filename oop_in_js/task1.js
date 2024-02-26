@@ -29,9 +29,10 @@ console.log("-------------------------------------------------------------------
 
 const theEldestBook = Book.elderBook([firstBook, secondBook, thirdBook, forthBook])
 
-console.log("The eldest book is:", theEldestBook.bookTitle)
+console.log("The eldest book is:", theEldestBook[0]._bookTitle)
 console.log("----------------------------------------------------------------------------------------------------------------------------------------------")
 
 const eVersion = Ebook.digitize(thirdBook,"pdf")
 
 eVersion.describe()
+

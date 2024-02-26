@@ -10,17 +10,17 @@ export default class Book {
     }
 
     set bookTitle(value) {
-        if(typeof value !== "string"){
+        if (typeof value !== "string") {
             console.log("Title should be 'string' type")
             return
         }
 
-        if(value.length < 1) {
+        if (value.length < 1) {
             console.log("Title length should be at least 1 symbol")
             return
         }
 
-        if(value === ""){
+        if (value === "") {
             console.log("Title cannot be empty")
             return
         }
@@ -28,7 +28,7 @@ export default class Book {
         return value
     }
 
-    get author(){
+    get author() {
         return this._author
     }
 
@@ -50,30 +50,27 @@ export default class Book {
         return value
     }
 
-    get bookYear(){
+    get bookYear() {
         return this._bookYear
     }
 
-    set bookYear(value){
-        if(typeof value !== "number"){
+    set bookYear(value) {
+        if (typeof value !== "number") {
             console.log("Year of publishing should be 'number' type")
             return
         }
 
-        if(value < 0) {
+        if (value < 0) {
             console.log("Year of publishing cannot be a negative number")
             return
         }
 
-        if(value < 2000 && value >= 0){
+        if (value < 2000 && value >= 0) {
             console.log("Publications before 2000 are not accepted")
             return
         }
-        // if(value > 2024){
-        //     console.log("The publication year can only be up to this year")
-        //     return
-        // }
-        if(value > new Date().getFullYear()){
+
+        if (value > new Date().getFullYear()) {
             console.log("The publication year can only be up to this year")
             return
         }
@@ -91,9 +88,6 @@ export default class Book {
     }
 
     static elderBook(books) {
-
-        books.sort((a, b) => a.bookYear - b.bookYear)
-
-        return books[0]
+        return structuredClone(books).sort((a, b) => a._bookYear - b._bookYear)
     }
 }
