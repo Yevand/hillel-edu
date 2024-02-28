@@ -1,9 +1,9 @@
-const firstPerson = "Pat"
+const firstPerson = 'Pat';
 
-const secondPerson = "Mat"
+const secondPerson = 'Mat';
 
-const simpleGreeting = "Welcome on board, " + firstPerson + " and " + secondPerson + "!"
-console.log(simpleGreeting)
+const simpleGreeting = `Welcome on board, ${firstPerson} and ${secondPerson}!`;
+console.log(simpleGreeting);
 
-const templateGreeting =  `Welcome on board, ${firstPerson} and ${secondPerson}!`
-console.log(templateGreeting)
+const templateGreeting = `Welcome on board, ${firstPerson} and ${secondPerson}!`;
+console.log(templateGreeting);

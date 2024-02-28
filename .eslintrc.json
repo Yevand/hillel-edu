@@ -9,12 +9,5 @@
         "sourceType": "module"
     },
     "rules": {
-    "singleQuote": true,
-    "trailingComma": "none",
-    "semi": true,
-    "endOfLine": "auto",
-    "bracketSpacing": false,
-    "useTabs": true,
-    "printWidth": 120
     }
 }

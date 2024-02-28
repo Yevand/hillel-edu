@@ -1,7 +1,7 @@
 // task 4.1
-const pi = Math.PI
+const pi = Math.PI;
 
-const radius = 17
+const radius = 17;
 
-const circleArea = pi * radius**2
-console.log("Area of circle:", circleArea)
+const circleArea = pi * radius ** 2;
+console.log('Area of circle:', circleArea);

@@ -1,5 +1,5 @@
-const numbers = [10, 20, 30, 40, 50]
+const numbers = [10, 20, 30, 40, 50];
 
-const sum = numbers.reduce((acc, item )=> acc + item)
+const sum = numbers.reduce((acc, item) => acc + item);
 
-console.log(sum)
+console.log(sum);

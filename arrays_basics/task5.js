@@ -1,7 +1,7 @@
-const firstArray = [1, 2, 3]
+const firstArray = [1, 2, 3];
 
-const secondArray = [4, 5, 6]
+const secondArray = [4, 5, 6];
 
-const mergedArray = firstArray.concat(secondArray)
+const mergedArray = firstArray.concat(secondArray);
 
-console.log(mergedArray)
+console.log(mergedArray);
