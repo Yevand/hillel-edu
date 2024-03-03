@@ -1,11 +1,11 @@
-const numbersList = [1,10,14,2,4,5,43,34]
+const numbersList = [1, 10, 14, 2, 4, 5, 43, 34];
 
-const cloneArray = structuredClone(numbersList)
+const cloneArray = structuredClone(numbersList);
 
-cloneArray.sort((a, b)=> a - b)
+cloneArray.sort((a, b) => a - b);
 
-console.log("Unsorted array:", numbersList)
+console.log('Unsorted array:', numbersList);
 
-console.log("-------------------------------")
+console.log('-------------------------------');
 
-console.log("Sorted array:", cloneArray)
+console.log('Sorted array:', cloneArray);

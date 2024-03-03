@@ -1,8 +1,8 @@
-const student = {}
+const student = {};
 
-student.firstName = "Тарас"
-student.lastName = "Шевченко"
-student.age = 47
-student.courses = ["Література", "Образотворче мистецтво", "Філософія" ]
+student.firstName = 'Тарас';
+student.lastName = 'Шевченко';
+student.age = 47;
+student.courses = ['Література', 'Образотворче мистецтво', 'Філософія'];
 
-console.log(student)
+console.log(student);
