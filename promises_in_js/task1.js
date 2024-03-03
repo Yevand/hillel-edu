@@ -1,7 +1,7 @@
-const timerFunction = (textToWrite, timerSetUp) => {
+const greeting = (textToWrite, timerSetUp) => {
     setTimeout(() => {
         console.log(textToWrite)
     }, timerSetUp);
 };
 
-timerFunction("Hi there!", 3000);
+greeting("Hi there!", 3000);
